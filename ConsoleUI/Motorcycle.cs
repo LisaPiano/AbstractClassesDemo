@@ -11,7 +11,12 @@ namespace ConsoleUI
         public bool HasSideCart { get; set; } = false;
         public override void DriveAbstract()
         {
-            Console.WriteLine("This car can really drive!");
+            Console.WriteLine("This motorcycle can  drive!");
+        }
+
+        public override void DriveVirtual()
+        {
+            Console.WriteLine("This motorcycle can vroom virtually!");
         }
 
     }

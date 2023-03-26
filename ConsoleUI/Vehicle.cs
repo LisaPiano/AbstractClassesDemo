@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
-    public abstract class Vehicle_
+    public abstract class Vehicle
     {
         public string Year { get; set; } = "2013";
         public string Make { get; set; } = "default make";
@@ -15,7 +15,7 @@ namespace ConsoleUI
         public abstract void DriveAbstract(); //stubbed out method
         public virtual void DriveVirtual()
         {
-            Console.WriteLine("This sure is a virtual vehicle!");
+            Console.WriteLine("This is a veritably virtual vehicle!");
         }
     }
 }

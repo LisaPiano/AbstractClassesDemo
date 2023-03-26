@@ -81,13 +81,24 @@ namespace ConsoleUI
             vehicles.Add(scooty);
 
 
+            foreach (var item in vehicles)
+            {
+                Console.WriteLine($"The year of the vehicle is: {item.Year}. The make of the vehicle is {item.Make}. The model of the vehicle is {item.Model}.");
+                item.DriveAbstract();
+
+                item.DriveVirtual();
+             
+                Console.WriteLine(" ");
+            }
+
+
 
 
 
 
             /*
              * Add the 4 vehicles to the list
-             * Using a foreach loop iterate over each of the properties
+             * Using a foreach loop iterate over each of the propertiescw   
              */
 
             // Call each of the drive methods for one car and one motorcycle
