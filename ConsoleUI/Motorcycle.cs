@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
-    public class Car : Vehicle
+    public class Motorcycle : Vehicle
     {
-        public Car() { }
-
-        public bool HasTrunk { get; set; } = false;
+        public bool HasSideCart { get; set; } = false;
         public override void DriveAbstract()
         {
             Console.WriteLine("This car can really drive!");
         }
-
 
     }
 }

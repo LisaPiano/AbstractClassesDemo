@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +11,14 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            /*
-             * Todo follow all comments!! 
-             */
 
-            #region Vehicles
+            var vehicles = new List<Vehicle>();
+
+
+
+
+
+
 
             /*
              * Create an abstract class called Vehicle
@@ -39,6 +43,48 @@ namespace ConsoleUI
              * Set the properties with object initializer syntax
              */
 
+            Car toyota = new Car()
+            {
+                Year = "2020",
+                HasTrunk = true,
+                Make = "Toyota",
+                Model = "Highlander",
+            };
+
+            Motorcycle fasty = new Motorcycle()
+            {
+                Year = "2030",
+                HasSideCart = true,
+                Make = "Amazing Motorcycle Make",
+                Model = "Spectacular Motorcycle Make"
+            };
+
+            Vehicle vehicle = new Car()
+            {
+                Year = "0",
+                HasTrunk = false,
+                Make = "Jeep",
+                Model = "Cherokee"
+            };
+
+            Vehicle scooty = new Motorcycle()
+            {
+                Year = "2010",
+                Make = "Wondercycle",
+                Model = "GoodLookingCycle",
+                HasSideCart = false
+            };
+
+            vehicles.Add(toyota);
+            vehicles.Add(fasty);
+            vehicles.Add(vehicle);
+            vehicles.Add(scooty);
+
+
+
+
+
+
             /*
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate over each of the properties
@@ -46,8 +92,8 @@ namespace ConsoleUI
 
             // Call each of the drive methods for one car and one motorcycle
 
-            #endregion            
-            Console.ReadLine();
+
         }
     }
 }
+
